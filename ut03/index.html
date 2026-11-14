@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruta del río en bici · UT3</title>
+  <meta name="description" content="Ruta en bicicleta de 12 km junto al río: recorrido, tramos, horarios y vídeo con subtítulos.">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido principal</a>
+
+  <header class="cabecera">
+    <a href="index.html"><img src="img/logo_biciruta.png" alt="BiciRuta, inicio" width="160" height="40"></a>
+    <nav aria-label="Menú principal">
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Ruta del río</a></li>
+        <li><a href="#tramos">Tramos</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#inscripcion">Inscripción</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="principal">
+    <h1>Ruta del río en bici</h1>
+    <p>Recorrido llano de 12 km que sigue la orilla del río entre el puente viejo y el parque de la desembocadura. Es apta para cualquier bicicleta y se hace en una hora a ritmo tranquilo.</p>
+
+    <section aria-labelledby="titulo-recorrido">
+      <h2 id="titulo-recorrido">El recorrido</h2>
+      <img class="responsiva"
+           src="img/mapa_ruta-400.jpg"
+           srcset="img/mapa_ruta-400.jpg 400w, img/mapa_ruta-800.jpg 800w, img/mapa_ruta-1200.jpg 1200w"
+           sizes="(min-width: 700px) 640px, 100vw"
+           width="400" height="225" loading="lazy"
+           alt="Mapa esquemático: la ruta sale del puente viejo, sigue la orilla norte del río y termina en el parque de la desembocadura, 12 km después.">
+
+      <article>
+        <h3>Consejos para el día de la ruta</h3>
+        <p>Lleva agua y casco. El único repecho está en el kilómetro 7, al pasar bajo la autovía. Hay fuentes en los kilómetros 3 y 9.</p>
+      </article>
+    </section>
+
+    <section id="tramos" aria-labelledby="titulo-tramos">
+      <h2 id="titulo-tramos">Tramos y horarios</h2>
+      <table class="tarifas">
+        <caption>Tramos de la ruta con distancia y hora de paso del grupo (salida a las 10:00)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Tramo</th>
+            <th scope="col">Distancia</th>
+            <th scope="col">Acumulado</th>
+            <th scope="col">Hora de paso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Puente viejo – Fuente del molino</th><td>3 km</td><td>3 km</td><td>10:15</td></tr>
+          <tr><th scope="row">Fuente del molino – Paso de la autovía</th><td>4 km</td><td>7 km</td><td>10:35</td></tr>
+          <tr><th scope="row">Paso de la autovía – Merendero</th><td>2 km</td><td>9 km</td><td>10:45</td></tr>
+          <tr><th scope="row">Merendero – Parque de la desembocadura</th><td>3 km</td><td>12 km</td><td>11:00</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="4">Horas orientativas a una media de 12 km/h, sin paradas.</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="video" aria-labelledby="titulo-video">
+      <h2 id="titulo-video">La ruta en vídeo</h2>
+      <figure>
+        <video controls preload="metadata" width="640" height="360" poster="img/ruta_rio_poster.jpg">
+          <source src="media/ruta_rio.mp4" type="video/mp4">
+          <track kind="captions" src="media/ruta_rio.es.vtt" srclang="es" label="Español" default>
+          <p>Tu navegador no puede reproducir el vídeo. <a href="media/ruta_rio.mp4">Descarga el vídeo de la ruta (MP4, 12 s)</a>.</p>
+        </video>
+        <figcaption>Vídeo de 12 segundos con el recorrido, con subtítulos en español.</figcaption>
+      </figure>
+    </section>
+
+    <aside id="inscripcion" class="lateral" aria-labelledby="titulo-inscripcion">
+      <h2 id="titulo-inscripcion">Apúntate a la próxima salida</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" autocomplete="email" required>
+        <button type="submit">Inscribirme</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer class="pie">
+    <p>Página de prácticas · 0373 Lenguajes de marcas · UT3 · Actualizada el <time datetime="2026-11-13">13 de noviembre de 2026</time></p>
+  </footer>
+</body>
+</html>
