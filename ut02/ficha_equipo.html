@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ficha técnica de la Raspberry Pi 5 del aula de ASIR: características, conectores, puesta en marcha e inventario.">
+  <title>Ficha técnica · Raspberry Pi 5 · Inventario del aula ASIR</title>
+</head>
+
+<body>
+  <header>
+    <h1>Ficha técnica: Raspberry Pi 5</h1>
+    <p>Ordenador de placa única para las prácticas de redes y servidores del aula de ASIR.</p>
+    <nav>
+      <p>Ir a:</p>
+      <ul>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#conectores">Conectores</a></li>
+        <li><a href="#puesta-en-marcha">Puesta en marcha</a></li>
+        <li><a href="#inventario">Datos de inventario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="caracteristicas">
+      <h2>Características principales</h2>
+      <dl>
+        <dt>Procesador</dt>
+        <dd class="dato-tecnico">Broadcom BCM2712, cuatro núcleos Arm Cortex-A76 de 64 bits a 2,4&nbsp;GHz</dd>
+        <dt>Gráficos</dt>
+        <dd class="dato-tecnico">VideoCore VII, dos salidas de vídeo 4K a 60&nbsp;Hz</dd>
+        <dt>Memoria RAM</dt>
+        <dd class="dato-tecnico">LPDDR4X, según el modelo: 2, 4, 8 o 16&nbsp;GB</dd>
+        <dt>Almacenamiento</dt>
+        <dd class="dato-tecnico">Tarjeta microSD (y disco NVMe opcional a través de PCI Express 2.0)</dd>
+        <dt>Alimentación</dt>
+        <dd class="dato-tecnico">USB-C de 5&nbsp;V y 5&nbsp;A</dd>
+      </dl>
+      <p>Más información en la
+        <a href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank" rel="noopener noreferrer">página
+          oficial del fabricante</a> (se abre en una pestaña nueva).</p>
+    </section>
+
+    <section id="conectores">
+      <h2>Conectores</h2>
+      <img src="img/raspberry_pi5_esquema.png"
+        alt="Esquema de la placa: dos USB 2.0, dos USB 3.0 y Ethernet en un lateral; USB-C y dos micro HDMI en el borde inferior; conector GPIO de 40 pines arriba"
+        width="400" height="250">
+      <ul>
+        <li>2 puertos USB 3.0 y 2 puertos USB 2.0</li>
+        <li>Ethernet Gigabit</li>
+        <li>Wi-Fi de doble banda (802.11ac) y Bluetooth 5.0</li>
+        <li>2 salidas micro HDMI</li>
+        <li>Conector GPIO de 40 pines</li>
+        <li>Botón de encendido</li>
+      </ul>
+    </section>
+
+    <section id="puesta-en-marcha">
+      <h2>Puesta en marcha</h2>
+      <ol>
+        <li>Grabar el sistema operativo en la tarjeta microSD con Raspberry Pi Imager.</li>
+        <li>Insertar la tarjeta y conectar el cable de red, el monitor y el teclado.</li>
+        <li>Conectar la fuente de alimentación USB-C oficial.</li>
+        <li>Completar el asistente de primer arranque y actualizar el sistema.</li>
+      </ol>
+      <p>Si algo falla, vuelve a la lista de <a href="#conectores">conectores</a> y comprueba los cables.</p>
+    </section>
+
+    <section id="inventario">
+      <h2>Datos de inventario</h2>
+      <dl>
+        <dt>Ubicación</dt>
+        <dd class="dato-inventario">Aula de ASIR, armario de redes</dd>
+        <dt>Uso</dt>
+        <dd class="dato-inventario">Prácticas de servidores web y DNS</dd>
+        <dt>Responsable</dt>
+        <dd class="dato-inventario">Marco Collado Penalba</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="taller.html">Ir a la página del taller de BiciRuta</a></p>
+  </footer>
+</body>
+
+</html>
