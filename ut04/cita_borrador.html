@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cita en el taller · BiciRuta</title>
+</head>
+<body>
+  <img src="img/logo_biciruta.png" alt="BiciRuta" width="320" height="80">
+  <h1>Pide cita en el taller</h1>
+  <form action="receptor.html">
+    Nombre: <input type="text" name="nombre"><br>
+    DNI: <input type="text" name="dni"><br>
+    Correo: <input type="text" name="correo"><br>
+    Teléfono: <input type="text"><br>
+    Fecha de la cita: <input type="text" name="fecha" placeholder="dd/mm/aaaa"><br>
+    Tipo de bicicleta:
+    <select name="tipo">
+      <option>Urbana</option><option>Montaña</option><option>Eléctrica</option>
+    </select><br>
+    Servicio:
+    <input type="radio" name="servicio1"> Revisión básica
+    <input type="radio" name="servicio2"> Revisión completa
+    <input type="radio" name="servicio3"> Reparación<br>
+    <input type="checkbox" name="lavado"> Añadir lavado (6 €)<br>
+    Describe la avería:<br>
+    <textarea name="averia"></textarea><br>
+    Crea tu cuenta para seguir la reparación. Contraseña: <input type="text" name="clave"><br>
+    <button>Enviar</button>
+  </form>
+</body>
+</html>

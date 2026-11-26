@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de alta de un usuario en la red del centro: cuenta, datos de contacto y servicios.">
+  <title>Alta de usuario en la red del centro · ASIR</title>
+  <link rel="stylesheet" href="css/cita.css">
+  <script src="js/alta.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>Alta de usuario en la red del centro</h1>
+    <p>Rellena este formulario para tener cuenta en los equipos, el wifi y la plataforma del centro.
+      Los campos con <span class="obligatorio" aria-hidden="true">*</span> son obligatorios.</p>
+
+    <!-- Método POST: el formulario lleva datos personales y una contraseña, que no deben
+         aparecer en la URL, en el historial del navegador ni en los registros del servidor.
+         Además, crea algo nuevo (una cuenta): recargar una URL con GET no debe dar de alta a nadie. -->
+    <form id="form-alta" action="https://httpbin.org/post" method="post">
+
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <div class="campo">
+          <label for="nombre">Nombre y apellidos <span class="obligatorio" aria-hidden="true">*</span></label>
+          <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80" autocomplete="name">
+        </div>
+
+        <div class="campo">
+          <label for="nia">NIA <span class="obligatorio" aria-hidden="true">*</span></label>
+          <input type="text" id="nia" name="nia" required pattern="[0-9]{8}" inputmode="numeric"
+            title="El NIA tiene 8 cifras. Ejemplo: 10234567" aria-describedby="ayuda-nia">
+          <small id="ayuda-nia" class="ayuda">Número de identificación del alumnado: 8 cifras.</small>
+        </div>
+
+        <div class="campo">
+          <label for="nacimiento">Fecha de nacimiento <span class="obligatorio" aria-hidden="true">*</span></label>
+          <input type="date" id="nacimiento" name="nacimiento" required min="1940-01-01"
+            aria-describedby="ayuda-nacimiento">
+          <small id="ayuda-nacimiento" class="ayuda">Tienes que tener al menos 16 años.</small>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo personal <span class="obligatorio" aria-hidden="true">*</span></label>
+          <input type="email" id="correo" name="correo" required autocomplete="email">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Estudios</legend>
+
+        <div class="campo">
+          <label for="ciclo">Ciclo <span class="obligatorio" aria-hidden="true">*</span></label>
+          <select id="ciclo" name="ciclo" required>
+            <option value="">— Elige una opción —</option>
+            <option value="smr">CFGM Sistemas Microinformáticos y Redes (SMR)</option>
+            <option value="asir">CFGS Administración de Sistemas Informáticos en Red (ASIR)</option>
+            <option value="daw">CFGS Desarrollo de Aplicaciones Web (DAW)</option>
+          </select>
+        </div>
+
+        <fieldset class="grupo">
+          <legend>Curso <span class="obligatorio" aria-hidden="true">*</span></legend>
+          <div class="opcion">
+            <input type="radio" id="curso-1" name="curso" value="1" required>
+            <label for="curso-1">1.º</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="curso-2" name="curso" value="2">
+            <label for="curso-2">2.º</label>
+          </div>
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cuenta y servicios</legend>
+
+        <div class="campo">
+          <label for="usuario">Nombre de usuario <span class="obligatorio" aria-hidden="true">*</span></label>
+          <input type="text" id="usuario" name="usuario" required pattern="[a-z][a-z0-9.]{3,15}"
+            title="De 4 a 16 caracteres: minúsculas, números y puntos, empezando por una letra. Ejemplo: marco.collado"
+            aria-describedby="ayuda-usuario" autocomplete="username">
+          <small id="ayuda-usuario" class="ayuda">De 4 a 16 caracteres: minúsculas, números y puntos; empieza por una letra.</small>
+        </div>
+
+        <div class="campo">
+          <label for="clave">Contraseña <span class="obligatorio" aria-hidden="true">*</span></label>
+          <input type="password" id="clave" name="clave" required minlength="10"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{10,}"
+            title="Al menos 10 caracteres con mayúsculas, minúsculas y números."
+            aria-describedby="ayuda-clave" autocomplete="new-password">
+          <small id="ayuda-clave" class="ayuda">Al menos 10 caracteres con mayúsculas, minúsculas y números.</small>
+        </div>
+
+        <div class="campo">
+          <label for="clave2">Repite la contraseña <span class="obligatorio" aria-hidden="true">*</span></label>
+          <input type="password" id="clave2" name="clave2" required autocomplete="new-password">
+        </div>
+
+        <div class="campo">
+          <label for="dispositivos">Dispositivos propios en el wifi</label>
+          <input type="number" id="dispositivos" name="dispositivos" min="0" max="3" step="1" value="1"
+            aria-describedby="ayuda-dispositivos">
+          <small id="ayuda-dispositivos" class="ayuda">De 0 a 3 (portátil, móvil, tableta…).</small>
+        </div>
+
+        <fieldset class="grupo">
+          <legend>Servicios que necesito</legend>
+          <div class="opcion">
+            <input type="checkbox" id="serv-wifi" name="servicios" value="wifi" checked>
+            <label for="serv-wifi">Wifi del centro</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="serv-vpn" name="servicios" value="vpn">
+            <label for="serv-vpn">VPN para conectarme desde casa</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="serv-impresion" name="servicios" value="impresion">
+            <label for="serv-impresion">Impresión</label>
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <label for="observaciones">Observaciones</label>
+          <textarea id="observaciones" name="observaciones" rows="3" maxlength="300"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="opcion">
+        <input type="checkbox" id="normas" name="normas" value="acepto" required>
+        <label for="normas">Acepto las normas de uso de la red del centro <span class="obligatorio"
+            aria-hidden="true">*</span></label>
+      </div>
+
+      <button type="submit">Darme de alta</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="cita.html">Ir al formulario de cita del taller</a></p>
+  </footer>
+</body>
+
+</html>
