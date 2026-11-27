@@ -1,0 +1,63 @@
+{
+  "tienda": "BiciRuta S.L.",
+  "actualizado": "2026-10-01",
+  "productos": [
+    {
+      "ref": "BR-0101",
+      "categoria": "bicicleta",
+      "proveedor": "Ciclos del Norte S.A.",
+      "nombre": "Bici Urbana U100",
+      "precio": { "importe": 389.00, "moneda": "EUR" },
+      "stock": 12,
+      "descripcion": "Cuadro de aluminio y cesta delantera",
+      "caracteristicas": { "talla": "M", "peso_kg": 14.5 }
+    },
+    {
+      "ref": "BR-0102",
+      "categoria": "bicicleta",
+      "proveedor": "Ciclos del Norte S.A.",
+      "nombre": "Bici Montaña M300",
+      "precio": { "importe": 649.00, "moneda": "EUR" },
+      "stock": 5,
+      "descripcion": "Horquilla de suspensión de 100 mm",
+      "caracteristicas": { "talla": "L", "peso_kg": 13.2 }
+    },
+    {
+      "ref": "BR-0103",
+      "categoria": "bicicleta",
+      "proveedor": "Accesorios Ruta S.L.",
+      "nombre": "E-Bike City E500",
+      "precio": { "importe": 1490.00, "moneda": "EUR" },
+      "stock": 3,
+      "descripcion": "Motor de 250 W y 70 km de autonomía",
+      "caracteristicas": { "talla": "M", "peso_kg": 22.8 }
+    },
+    {
+      "ref": "BR-0201",
+      "categoria": "accesorio",
+      "proveedor": "Accesorios Ruta S.L.",
+      "nombre": "Casco Urban M",
+      "precio": { "importe": 39.90, "moneda": "EUR" },
+      "stock": 30,
+      "descripcion": "Talla M (54-58 cm) & ajustable, para cabezas < 58 cm",
+      "caracteristicas": { "talla": "M" }
+    },
+    {
+      "ref": "BR-0202",
+      "categoria": "accesorio",
+      "proveedor": "Accesorios Ruta S.L.",
+      "nombre": "Candado U Pro",
+      "precio": { "importe": 29.95, "moneda": "EUR" },
+      "stock": 18
+    },
+    {
+      "ref": "BR-0301",
+      "categoria": "recambio",
+      "proveedor": "Ciclos del Norte S.A.",
+      "nombre": "Cámara 700x35",
+      "precio": { "importe": 6.50, "moneda": "EUR" },
+      "stock": 80,
+      "descripcion": "Válvula Presta"
+    }
+  ]
+}

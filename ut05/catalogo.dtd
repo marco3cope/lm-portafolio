@@ -1,0 +1,32 @@
+<!-- catalogo.dtd · Gramática del catálogo de BiciRuta (DTD externa) · Práctica 05 -->
+
+<!-- La raíz tiene uno o más productos: cardinalidad + -->
+<!ELEMENT catalogo (producto+)>
+<!ATTLIST catalogo
+  tienda       CDATA  #REQUIRED
+  actualizado  CDATA  #REQUIRED>
+
+<!-- Orden fijo: nombre, precio y stock obligatorios (,);
+     descripción y características opcionales (?) -->
+<!ELEMENT producto (nombre, precio, stock, descripcion?, caracteristicas?)>
+<!ATTLIST producto
+  ref        ID                                #REQUIRED
+  categoria  (bicicleta | accesorio | recambio) #REQUIRED
+  proveedor  CDATA                             #IMPLIED>
+
+<!-- Elementos de texto: #PCDATA (la DTD no distingue números de palabras) -->
+<!ELEMENT nombre       (#PCDATA)>
+<!ELEMENT precio       (#PCDATA)>
+<!-- moneda: solo EUR o USD; si no se escribe, vale EUR -->
+<!ATTLIST precio
+  moneda  (EUR | USD)  "EUR">
+<!ELEMENT stock        (#PCDATA)>
+<!ELEMENT descripcion  (#PCDATA)>
+
+<!-- Características opcionales: talla y peso, cada uno puede faltar -->
+<!ELEMENT caracteristicas (talla?, peso?)>
+<!ELEMENT talla        (#PCDATA)>
+<!ELEMENT peso         (#PCDATA)>
+<!-- El peso siempre está en kg: #FIXED -->
+<!ATTLIST peso
+  unidad  CDATA  #FIXED "kg">

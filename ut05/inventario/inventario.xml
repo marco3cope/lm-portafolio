@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Inventario de los equipos de red del aula · Práctica 05, Fase 5 · datos de ejemplo -->
+<inventario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="inventario.xsd"
+            aula="Aula ASIR 1" actualizado="2026-11-26">
+
+  <equipo id="EQ-01" tipo="router">
+    <nombre>Router de salida del aula</nombre>
+    <modelo>Cisco ISR 1101</modelo>
+    <ip>192.168.10.1</ip>
+    <mac>00:1A:2B:3C:4D:01</mac>
+    <ubicacion armario="R1">Armario de comunicaciones</ubicacion>
+    <fecha_compra>2022-09-15</fecha_compra>
+  </equipo>
+
+  <equipo id="EQ-02" tipo="switch">
+    <nombre>Switch principal</nombre>
+    <modelo>Cisco Catalyst 2960-X 24 puertos</modelo>
+    <ip>192.168.10.2</ip>
+    <mac>00:1A:2B:3C:4D:02</mac>
+    <ubicacion armario="R1">Armario de comunicaciones</ubicacion>
+    <fecha_compra>2022-09-15</fecha_compra>
+  </equipo>
+
+  <equipo id="EQ-03" tipo="punto-acceso">
+    <nombre>Punto de acceso wifi</nombre>
+    <modelo>Ubiquiti UniFi U6 Lite</modelo>
+    <ip>192.168.10.3</ip>
+    <mac>00:1A:2B:3C:4D:03</mac>
+    <ubicacion>Techo, centro del aula</ubicacion>
+    <fecha_compra>2023-02-10</fecha_compra>
+  </equipo>
+
+  <equipo id="EQ-04" tipo="servidor">
+    <nombre>Servidor de máquinas virtuales</nombre>
+    <modelo>Dell PowerEdge T150</modelo>
+    <ip>192.168.10.10</ip>
+    <mac>00:1A:2B:3C:4D:10</mac>
+    <ubicacion armario="R1">Armario de comunicaciones</ubicacion>
+    <fecha_compra>2024-01-22</fecha_compra>
+  </equipo>
+
+  <equipo id="EQ-05" tipo="servidor">
+    <nombre>NAS de copias de seguridad</nombre>
+    <modelo>Synology DS224+</modelo>
+    <ip>192.168.10.11</ip>
+    <mac>00:1A:2B:3C:4D:11</mac>
+    <ubicacion armario="R1">Armario de comunicaciones</ubicacion>
+    <fecha_compra>2024-01-22</fecha_compra>
+  </equipo>
+
+  <equipo id="EQ-06" tipo="impresora">
+    <nombre>Impresora de red</nombre>
+    <modelo>HP LaserJet Pro M404dn</modelo>
+    <ip>192.168.10.20</ip>
+    <mac>00:1A:2B:3C:4D:20</mac>
+    <ubicacion>Mesa del profesor</ubicacion>
+    <fecha_compra>2021-10-05</fecha_compra>
+  </equipo>
+
+</inventario>

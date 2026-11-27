@@ -1,0 +1,82 @@
+{
+  "aula": "Aula ASIR 1",
+  "actualizado": "2026-11-26",
+  "equipos": [
+    {
+      "id": "EQ-01",
+      "tipo": "router",
+      "nombre": "Router de salida del aula",
+      "modelo": "Cisco ISR 1101",
+      "ip": "192.168.10.1",
+      "mac": "00:1A:2B:3C:4D:01",
+      "ubicacion": {
+        "lugar": "Armario de comunicaciones",
+        "armario": "R1"
+      },
+      "fecha_compra": "2022-09-15"
+    },
+    {
+      "id": "EQ-02",
+      "tipo": "switch",
+      "nombre": "Switch principal",
+      "modelo": "Cisco Catalyst 2960-X 24 puertos",
+      "ip": "192.168.10.2",
+      "mac": "00:1A:2B:3C:4D:02",
+      "ubicacion": {
+        "lugar": "Armario de comunicaciones",
+        "armario": "R1"
+      },
+      "fecha_compra": "2022-09-15"
+    },
+    {
+      "id": "EQ-03",
+      "tipo": "punto-acceso",
+      "nombre": "Punto de acceso wifi",
+      "modelo": "Ubiquiti UniFi U6 Lite",
+      "ip": "192.168.10.3",
+      "mac": "00:1A:2B:3C:4D:03",
+      "ubicacion": {
+        "lugar": "Techo, centro del aula"
+      },
+      "fecha_compra": "2023-02-10"
+    },
+    {
+      "id": "EQ-04",
+      "tipo": "servidor",
+      "nombre": "Servidor de máquinas virtuales",
+      "modelo": "Dell PowerEdge T150",
+      "ip": "192.168.10.10",
+      "mac": "00:1A:2B:3C:4D:10",
+      "ubicacion": {
+        "lugar": "Armario de comunicaciones",
+        "armario": "R1"
+      },
+      "fecha_compra": "2024-01-22"
+    },
+    {
+      "id": "EQ-05",
+      "tipo": "servidor",
+      "nombre": "NAS de copias de seguridad",
+      "modelo": "Synology DS224+",
+      "ip": "192.168.10.11",
+      "mac": "00:1A:2B:3C:4D:11",
+      "ubicacion": {
+        "lugar": "Armario de comunicaciones",
+        "armario": "R1"
+      },
+      "fecha_compra": "2024-01-22"
+    },
+    {
+      "id": "EQ-06",
+      "tipo": "impresora",
+      "nombre": "Impresora de red",
+      "modelo": "HP LaserJet Pro M404dn",
+      "ip": "192.168.10.20",
+      "mac": "00:1A:2B:3C:4D:20",
+      "ubicacion": {
+        "lugar": "Mesa del profesor"
+      },
+      "fecha_compra": "2021-10-05"
+    }
+  ]
+}

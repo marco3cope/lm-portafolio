@@ -1,0 +1,12 @@
+DATOS COMPLETOS DEL CATÁLOGO (para la Fase 1)
+
+ref      categoría   nombre                 precio   stock  descripción / características
+BR-0101  bicicleta   Bici Urbana U100       389.00   12     Cuadro de aluminio y cesta delantera. Talla: M. Peso: 14.5 kg
+BR-0102  bicicleta   Bici Montaña M300      649.00    5     Horquilla de suspensión de 100 mm. Talla: L. Peso: 13.2 kg
+BR-0103  bicicleta   E-Bike City E500      1490.00    3     Motor de 250 W y 70 km de autonomía. Talla: M. Peso: 22.8 kg
+BR-0201  accesorio   Casco Urban M           39.90   30     Talla M (54-58 cm), para cabezas < 58 cm
+BR-0202  accesorio   Candado U Pro           29.95   18     (sin descripción)
+BR-0301  recambio    Cámara 700x35            6.50   80     Válvula Presta
+
+Proveedores: BR-0101, BR-0102 y BR-0301 los sirve «Ciclos del Norte S.A.»; el resto, «Accesorios Ruta S.L.».
+Fecha de actualización del catálogo: 2026-10-01
